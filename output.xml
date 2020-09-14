@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.7.2 on win32)" generated="20200831 23:13:24.274" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.7.2 on win32)" generated="20200914 07:20:39.436" rpa="false">
 <suite id="s1" name="TC 02" source="C:\Users\kasharma\PycharmProjects\MMTDemo\Testsuite\TC_02.robot">
 <test id="s1-t1" name="Test Case1: Login with Valid Credentials">
 <kw name="Open Website in Chrome and Maximize window" library="Loginkeywords">
@@ -9,14 +9,22 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20200831 23:13:24.522" level="INFO">Opening browser 'Chrome' to base url 'https://money.rediff.com/index.html'.</msg>
-<status status="PASS" starttime="20200831 23:13:24.522" endtime="20200831 23:13:43.857"></status>
+<msg timestamp="20200914 07:20:39.667" level="INFO">Opening browser 'Chrome' to base url 'https://money.rediff.com/index.html'.</msg>
+<status status="PASS" starttime="20200914 07:20:39.667" endtime="20200914 07:20:46.127"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200831 23:13:43.857" endtime="20200831 23:13:46.054"></status>
+<status status="PASS" starttime="20200914 07:20:46.127" endtime="20200914 07:20:48.289"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:13:24.522" endtime="20200831 23:13:46.054"></status>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200914 07:20:48.297" level="INFO">${title} = BSE: 38,854.55 | NSE: 11,464.45 - Live Stock Market | Share Prices | Mutual Fund India: Rediff MoneyWiz</msg>
+<status status="PASS" starttime="20200914 07:20:48.289" endtime="20200914 07:20:48.297"></status>
+</kw>
+<status status="PASS" starttime="20200914 07:20:39.667" endtime="20200914 07:20:48.297"></status>
 </kw>
 <kw name="Click login button" library="Loginkeywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -24,18 +32,18 @@
 <arguments>
 <arg>${clicklogin}</arg>
 </arguments>
-<msg timestamp="20200831 23:13:46.058" level="INFO">Clicking link 'xpath://a[contains(text(),'Sign In')]'.</msg>
-<status status="PASS" starttime="20200831 23:13:46.058" endtime="20200831 23:13:56.497"></status>
+<msg timestamp="20200914 07:20:48.297" level="INFO">Clicking link 'xpath://a[contains(text(),'Sign In')]'.</msg>
+<status status="PASS" starttime="20200914 07:20:48.297" endtime="20200914 07:20:49.338"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:13:46.058" endtime="20200831 23:13:56.497"></status>
+<status status="PASS" starttime="20200914 07:20:48.297" endtime="20200914 07:20:49.342"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5 seconds</arg>
 </arguments>
-<msg timestamp="20200831 23:14:01.499" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200831 23:13:56.497" endtime="20200831 23:14:01.499"></status>
+<msg timestamp="20200914 07:20:54.345" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200914 07:20:49.342" endtime="20200914 07:20:54.346"></status>
 </kw>
 <kw name="Enter Email" library="Loginkeywords">
 <arguments>
@@ -47,10 +55,10 @@
 <arg>${EnterEmail}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200831 23:14:01.503" level="INFO">Typing text 'kapils0117@gmail.com' into text field 'xpath://input[@id='useremail']'.</msg>
-<status status="PASS" starttime="20200831 23:14:01.503" endtime="20200831 23:14:01.711"></status>
+<msg timestamp="20200914 07:20:54.349" level="INFO">Typing text 'kapils0117@gmail.com' into text field 'xpath://input[@id='useremail']'.</msg>
+<status status="PASS" starttime="20200914 07:20:54.348" endtime="20200914 07:20:54.455"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:14:01.499" endtime="20200831 23:14:01.711"></status>
+<status status="PASS" starttime="20200914 07:20:54.347" endtime="20200914 07:20:54.455"></status>
 </kw>
 <kw name="Enter Password" library="Loginkeywords">
 <arguments>
@@ -62,10 +70,10 @@
 <arg>${EnterPassword}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200831 23:14:01.715" level="INFO">Typing text 'Translam@1' into text field 'xpath://input[@id='userpass']'.</msg>
-<status status="PASS" starttime="20200831 23:14:01.715" endtime="20200831 23:14:01.876"></status>
+<msg timestamp="20200914 07:20:54.455" level="INFO">Typing text 'Translam@1' into text field 'xpath://input[@id='userpass']'.</msg>
+<status status="PASS" starttime="20200914 07:20:54.455" endtime="20200914 07:20:54.574"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:14:01.711" endtime="20200831 23:14:01.876"></status>
+<status status="PASS" starttime="20200914 07:20:54.455" endtime="20200914 07:20:54.574"></status>
 </kw>
 <kw name="Mark check option" library="Loginkeywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -73,10 +81,10 @@
 <arguments>
 <arg>${Checkbox}</arg>
 </arguments>
-<msg timestamp="20200831 23:14:01.876" level="INFO">Clicking element 'xpath://input[@id='rememberflag']'.</msg>
-<status status="PASS" starttime="20200831 23:14:01.876" endtime="20200831 23:14:01.952"></status>
+<msg timestamp="20200914 07:20:54.574" level="INFO">Clicking element 'xpath://input[@id='rememberflag']'.</msg>
+<status status="PASS" starttime="20200914 07:20:54.574" endtime="20200914 07:20:54.635"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:14:01.876" endtime="20200831 23:14:01.952"></status>
+<status status="PASS" starttime="20200914 07:20:54.574" endtime="20200914 07:20:54.635"></status>
 </kw>
 <kw name="Click on submit button" library="Loginkeywords">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -84,43 +92,41 @@
 <arguments>
 <arg>${Clicksubmit}</arg>
 </arguments>
-<msg timestamp="20200831 23:14:01.956" level="INFO">Clicking button 'xpath://input[@id='loginsubmit']'.</msg>
-<status status="PASS" starttime="20200831 23:14:01.956" endtime="20200831 23:14:02.040"></status>
+<msg timestamp="20200914 07:20:54.635" level="INFO">Clicking button 'xpath://input[@id='loginsubmit']'.</msg>
+<status status="PASS" starttime="20200914 07:20:54.635" endtime="20200914 07:20:54.711"></status>
 </kw>
-<status status="PASS" starttime="20200831 23:14:01.952" endtime="20200831 23:14:02.040"></status>
+<status status="PASS" starttime="20200914 07:20:54.635" endtime="20200914 07:20:54.711"></status>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <doc>Returns the title of the current page.</doc>
 <assign>
 <var>${title}</var>
 </assign>
-<msg timestamp="20200831 23:14:02.048" level="INFO">${title} = Indian stock markets: Login to Portfolio</msg>
-<status status="PASS" starttime="20200831 23:14:02.040" endtime="20200831 23:14:02.048"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${title}</arg>
-</arguments>
-<status status="PASS" starttime="20200831 23:14:02.048" endtime="20200831 23:14:02.048"></status>
+<msg timestamp="20200914 07:20:54.719" level="INFO">${title} = Indian stock markets: Login to Portfolio</msg>
+<status status="PASS" starttime="20200914 07:20:54.711" endtime="20200914 07:20:54.719"></status>
 </kw>
 <doc>This is to verify user can login with valid cred into Rediff.com</doc>
-<status status="PASS" starttime="20200831 23:13:24.522" endtime="20200831 23:14:02.052" critical="yes"></status>
+<status status="PASS" starttime="20200914 07:20:39.667" endtime="20200914 07:20:54.719" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Test case 2: Add stock">
+<status status="FAIL" starttime="20200914 07:20:54.719" endtime="20200914 07:20:54.723" critical="yes">Test case contains no keywords.</status>
 </test>
 <doc>Login page automation</doc>
-<status status="PASS" starttime="20200831 23:13:24.274" endtime="20200831 23:14:02.052"></status>
+<status status="FAIL" starttime="20200914 07:20:39.436" endtime="20200914 07:20:54.723"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="TC 02">TC 02</stat>
+<stat pass="1" fail="1" id="s1" name="TC 02">TC 02</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20200914 07:20:39.427" level="ERROR">Error in file 'C:\Users\kasharma\PycharmProjects\MMTDemo\Testsuite\TC_02.robot' on line 21: Non-existing setting 'Return'.</msg>
+<msg timestamp="20200914 07:20:39.659" level="ERROR">Error in file 'C:\Users\kasharma\PycharmProjects\MMTDemo\Testsuite\TC_02.robot' on line 5: Resource file '..\Resources\Externalkeywords.py' does not exist.</msg>
 </errors>
 </robot>
